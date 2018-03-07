@@ -1,0 +1,17 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i");
+
+// Variables
+// @import "variables";
+
+@import "settings";
+
+$global-flexbox: true; // optional if you want to enable flexbox globally
+@import "node_modules/foundation-sites/scss/foundation";
+@include foundation-everything(true);
+
+
+// @import "styles";
+// @import "home-style";

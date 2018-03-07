@@ -1,0 +1,131 @@
+
+.pagina-producto .menu a {
+	padding: 0;
+	margin: 1em 0.8em;
+	margin-left: 0;
+}
+
+.pagina-producto {
+	
+	
+}
+
+section{
+	padding-top: 10vh !important;
+	padding-bottom: 10vh !important;
+}
+	section:nth-child(odd){
+		background: -webkit-linear-gradient(top left,#eaeaea,#f4f4f4);
+	            background: -moz-linear-gradient(top left,#eaeaea,#f4f4f4);
+	            background: linear-gradient(top left,#eaeaea,#f4f4f4);
+
+	}
+
+	section:nth-child(even){
+		background-color: #f4f4f4;
+		-webkit-box-shadow: 0px -44px 65px -14px rgba(0,0,0,0.03);
+	-moz-box-shadow: 0px -44px 65px -14px rgba(0,0,0,0.03);
+	box-shadow: 0px -44px 65px -14px rgba(0,0,0,0.03);
+}
+
+
+.pagina-producto-imagem img{
+	width: 100%;
+	/* height: auto; */
+	border-radius: 2px;
+	min-height: 300px;
+	max-height: 500px;
+
+}
+
+.pagina-producto-thumbnails{
+	margin-top: 1em;
+}
+	.pagina-producto-thumbnails img{
+		border-radius: 2px;
+		width: 65px;
+		height: 65px;
+	}
+
+	.pagina-producto-detalhes h2 {
+		font-size: 1em;
+	}
+	.pagina-producto-detalhes hr{
+		margin: 1.5em 0;
+		border-bottom: 1.4px solid #cacaca;
+	}
+
+
+	.producto-subcategoria{
+		opacity: 0.45;
+		font-weight: 400;
+	}
+
+	.producto-nome{
+		font-size: 1.49em;
+		font-weight: 600;
+		color: #373737;
+		text-transform: capitalize;
+		display: block;
+		position: relative;
+	}
+
+		.producto-nome::after{
+			content:' ';
+			position: absolute;
+			/* bottom:0%; */
+			left:0.8em;
+			width: 30px;
+			margin-top: 2.1em;
+			border-top: 2.5px solid #373737;
+			transform:translateX(-50%);
+		}
+
+	.producto-descricao{
+		margin-top: 3.5em;
+		line-height: 1.75em;
+	}
+
+	.producto-inline-preco{
+		margin-right: 0.4em;
+		display: inline-block;
+	}
+
+	.producto-preco{
+		font-size: 1.59em;
+		font-weight: 700;
+	}
+		.producto-preco  span, .producto-preco-promocao span{
+			font-size: 0.65em;
+		}
+	.producto-preco-promocao{
+		color: #373737;
+		opacity: 0.3;
+		font-size: 1.49em;
+		font-weight: 600;
+		text-decoration: line-through;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 800px){
+	.pagina-producto-imagem img{
+		min-height: 500px;
+	}
+}
+
+
