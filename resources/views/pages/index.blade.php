@@ -40,7 +40,7 @@
                   </div>
 
                   <center> 
-                    <a href="/productos"> <button class="btn btn-1 btn-1e animated slideInUp"> FAÇA PARTE DA CULTURA </button>  </a>
+                    <a href="{{ route('productos.index')}}"> <button class="btn btn-1 btn-1e animated slideInUp"> FAÇA PARTE DA CULTURA </button>  </a>
                   </center>
 
               </div> 
@@ -240,7 +240,7 @@
     
 
       <center> 
-        <button class="btn btn-1 btn-1e wow fadeInUp" data-wow-delay="0.43s"> Todos os Produtos </button> 
+        <a href="{{ route('productos.index')}}"> <button class="btn btn-1 btn-1e wow fadeInUp" data-wow-delay="0.43s"> Todos os Produtos </button> </a>
       </center>
 
     </section>

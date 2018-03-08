@@ -41,11 +41,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '159.65.81.19'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'wuhcdcqnnh'),
-            'username' => env('DB_USERNAME', 'wuhcdcqnnh'),
-            'password' => env('DB_PASSWORD', 'S7bZjqbKGW'),
+            'host' => getenv('OPENSHIFT_MYSQL_DB_HOST'),
+            'port' => getenv('OPENSHIFT_MYSQL_DB_PORT'),
+            'database' => getenv('OPENSHIFT_GEAR_NAME'),
+            'username' => getenv('OPENSHIFT_MYSQL_DB_USERNAME'),
+            'password' => getenv('OPENSHIFT_MYSQL_DB_PASSWORD'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
