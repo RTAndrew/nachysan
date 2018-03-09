@@ -53,7 +53,7 @@ class PagesController extends Controller
 
      public function info(){
 
-        $perfilStaff = PerfilStaff::all();
+        
 
         return view('pages.info');
     }
