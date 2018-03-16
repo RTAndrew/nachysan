@@ -50,6 +50,7 @@
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan migrate",
             "php artisan optimize"
         ]
     },
