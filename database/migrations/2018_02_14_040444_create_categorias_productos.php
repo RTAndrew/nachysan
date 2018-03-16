@@ -26,10 +26,6 @@ class CreateCategoriasProductos extends Migration
                 ->on('categorias')
                 ->onDelete('cascade');
 
-            // $table->integer('sub_categoria_id')->unsigned();
-            //     $table->foreign('sub_categoria_id')->references('id')
-            //     ->on('sub_categorias')
-            //     ->onDelete('cascade');
         });
     }
 

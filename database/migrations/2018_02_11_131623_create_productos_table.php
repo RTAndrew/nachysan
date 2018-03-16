@@ -19,14 +19,18 @@ class CreateProductosTable extends Migration
             $table->string('slug')->unique();
             $table->text('descricao');
             $table->integer('preco');
+            $table->integer('preco_promocao')->nullable()->default(0);
             $table->integer('quantidade');
-            $table->string('estado');
+            $table->string('estado')->default('Indefinido');
             $table->string('thumbnail');
-            $table->text('imagens');
-            $table->bigInteger('views')->deafult(0);
+            $table->text('imagens')->nullable($value = true);
+            $table->bigInteger('views')->default(0);
 
             $table->integer('sub_categoria_id')->unsigned()->nullable();
             $table->foreign('sub_categoria_id')->references('id')->on('sub_categorias');
+
+            $table->integer('estado_producto_id')->unsigned()->nullable();
+            $table->foreign('estado_producto_id')->references('id')->on('estado_productos');
             
             $table->timestamps();
         });
@@ -39,6 +43,6 @@ class CreateProductosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('productos');
+        Schema::drop('productos');
     }
 }

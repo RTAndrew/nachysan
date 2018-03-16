@@ -273,6 +273,12 @@ form .btn{
 			text-align: center;
 			margin: 2em 0;
 		}
+
+		.footer-spacing .menu > li a {
+			text-align: center;
+			padding: 0 0;
+			margin: 0.5em 0.5em;
+		}
 			.footer-spacing p{ 
 				color: #a39167;
 				font-size: 0.85em;
@@ -297,15 +303,14 @@ form .btn{
 			font-size: 0.75em;
 			font-weight: 400;
 		}
+		
 
-		.location-rtl {
+		.lista-paises  > div:nth-child(odd){
 			text-align: right;
-		}
 
-		.location-ltr{
+		}.lista-paises  > div:nth-child(even){
 			text-align: left;
 		}
-
 
 
 
@@ -315,6 +320,7 @@ form .btn{
 	}
 	.footer-cell h1, .footer-cell h2{
 		font-size: 1em;
+		text-transform: capitalize;
 	}
 		.footer-cell h1{
 			font-size: 1em;

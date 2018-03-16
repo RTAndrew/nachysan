@@ -4,10 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class informacao_geral_endereco extends Model
+class rede_social extends Model
 {
-    protected $table = 'informacao_geral_endereco';
-    
+    protected $table = 'rede_social';
     //Nao adicionar os campos de tempo/hora
     public $timestamps = false;
 }

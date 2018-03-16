@@ -50,7 +50,7 @@
 
 
 
-				    @if ( (json_decode($producto->imagens, true) > 1) and ($producto->imagens != "[]") )
+				    @if ( (json_decode($producto->imagens, true) > 0) and ($producto->imagens != "[]") )
 						
 						<ul class="menu align-left">
 				    

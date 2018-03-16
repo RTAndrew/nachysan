@@ -1,11 +1,10 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\informacao_geral_email;
 
 
 
-class InformacoesGeraisTableSeeder extends Seeder
+class EmailsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,13 +14,15 @@ class InformacoesGeraisTableSeeder extends Seeder
     public function run()
     {
         
-        DB::table('informacao_geral_email')->insert([
+        DB::table('emails')->insert([
             'email' => 'nachysan@gmail.com',
+            'descricao_tipo_id' => 1
         ]);
 
 
-        DB::table('informacao_geral_email')->insert([
+        DB::table('emails')->insert([
             'email' => 'nachysan@site.com',
+            'descricao_tipo_id' => 2
         ]);
     }
 }

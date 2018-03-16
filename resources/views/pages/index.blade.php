@@ -76,7 +76,7 @@
 
         <center>  
           <h1 class="titulo-seccao"> Não é o que você veste <br> É o que você sente </h1>
-              <p class="p-seccao"> Aquilo em Que Acreditamos </p> 
+              <p class="p-seccao"> O que o nosso artesanato possui </p> 
         </center>
 
     </div>
@@ -208,20 +208,27 @@
         
 
 
-        <div class="grid-x grid-margin-y grid-margin-x wow blurIn">
-
+        <div class="grid-x grid-margin-y grid-margin-x">
+          <!-- Inicializar a variavel -->
+            @php
+              $i = 0;
+            @endphp
           @forelse ($productos as $producto)
-
-            <div class="cell small-6 medium-4 large-3">
+          
+            <div class="cell small-6 medium-4 large-3 wow slideInUp" data-wow-delay="{{$i}}s">
 
               @include('producto.producto')
 
             </div>
-
+            
+            <!-- Incrementar a variavel -->
+            @php
+              $i+=0.05;
+            @endphp
           @empty
 
             <div class="cell small-6 medium-4 large-12 produto">
-              <p>Nenhum producto encontrado.</p>
+             <center> <p>Nenhum producto encontrado.</p> </center>
             </div>
 
           @endforelse
@@ -251,8 +258,8 @@
 
       <div class="grid-container">
         <div class="grid-x grid-margin-x grid-margin-y grid-padding-y grid-padding-x"> 
-          <div class="cell small-8 small-offset-2 medium-6 medium-offset-3 large-7 large-offset-3 wow fadeInUp" data-wow-delay="0.30s">
-            <p> Desde XXX a confessionar productos com a liberdade de respirar e expressar uma identidade própria.  </p>
+          <div class="cell small-8 small-offset-2 medium-6 medium-offset-3 large-7 large-offset-3 wow blurIn" data-wow-delay="0.30s">
+            <p> Desde XXX a confessionar artesanatos com a liberdade de respirar e expressar uma identidade própria.  </p>
           </div>
         </div>
       </div>
@@ -268,7 +275,7 @@
       <div class="header-seccao"> 
 
         <center>  
-          <h1 class="titulo-seccao-2"> Menos Conversa <br> Mais Artesanato </h1>
+          <h1 class="titulo-seccao-2"> Mais Artesanato <br>  Mais identidade </h1>
               <!-- <p class="p-seccao"> Nós </p>  -->
           </center>
 
@@ -281,10 +288,10 @@
           <div class="cell small-12 medium-12 large-12">
             <center>
           
-                <button class="btn btn-1 btn-1e wow slideInUp is-active is-active-home"> Fazemos encomendas personalizadas </button>  
+                <button class="btn btn-1 btn-1e is-active is-active-home wow slideInLeft"> Fazemos encomendas personalizadas </button>  
               
                 
-                <a href="tel:244932"> <button class="btn btn-1 btn-1e wow slideInUp"> <i class="icon ion-ios-telephone-outline"></i> Ligue já 932XXXXXX </a> </button>  </a>
+                <a href="tel:{{ $num_contacto->contacto }}"> <button class="btn btn-1 btn-1e wow slideInRight"> <i class="icon ion-ios-telephone-outline"></i> Ligue já {{ $num_contacto->contacto }} </button>  </a>
 
             </center>
             

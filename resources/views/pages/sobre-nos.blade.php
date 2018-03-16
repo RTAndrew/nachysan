@@ -184,141 +184,9 @@
 
 	        <div class="grid-x grid-margin-y  grid-margin-x staff-inner-wrapper">
 
-
-
-
-
-
-
-		        
-
-
-
 	        	@include('inc.staff-profile')
-
-
-
-		        <!-- <div class="cell small-12 medium-6 large-4 staff-profile">
-		        	<center>
-
-		        		<div class="staff-profile-picture">
-		        		
-			        		 <img src="{{asset('img/staff/angola.png')}}"> 
-
-			        	</div> 
-
-			        </center>
-
-		        	<div class="staff-profile-content">
-		        		<h3> Arlete Nachiungo </h3>
-
-		        		<h4> Lorem ipsum dolor sit amet. </h4>
-
-		        		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		        		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		        		consequat. </p>
-		        	</div>
-
-		        	<div class="staff-profile-social-links">
-		        		
-		        		<ul class="menu left">
-		        			<li> <a href=""> <i class="icon ion-social-facebook"></i> </a> </li>
-		        			<li> <a href=""> <i class="icon ion-social-instagram"></i> </a> </li>
-		        		</ul>
-
-		        	</div>
-
-		        </div>
-
-
-
-
-
-
-
-		        <div class="cell small-12 medium-6 large-4 staff-profile">
-		        	<center>
-
-		        		<div class="staff-profile-picture">
-		        		
-			        		 <img src="{{asset('img/produto (1).jpg')}}"> 
-
-			        	</div> 
-
-			        </center>
-
-		        	<div class="staff-profile-content">
-		        		<h3> Arlete Nachiungo </h3>
-
-		        		<h4> Lorem ipsum dolor sit amet. </h4>
-
-		        		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		        		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		        		consequat. </p>
-		        	</div>
-
-		        	<div class="staff-profile-social-links">
-		        		
-		        		<ul class="menu left">
-		        			<li> <a href=""> <i class="icon ion-social-facebook"></i> </a> </li>
-		        			<li> <a href=""> <i class="icon ion-social-instagram"></i> </a> </li>
-		        		</ul>
-
-		        	</div>
-
-		        </div>
-
-
-
-
-
-
-
-		        <div class="cell small-12 medium-6 large-4 staff-profile">
-		        	<center>
-
-		        		<div class="staff-profile-picture">
-		        		
-			        		 <img src="{{asset('img/staff/angola.png')}}"> 
-
-			        	</div> 
-
-			        </center>
-
-		        	<div class="staff-profile-content">
-		        		<h3> Arlete Nachiungo </h3>
-
-		        		<h4> Lorem ipsum dolor sit amet. </h4>
-
-		        		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		        		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		        		consequat. </p>
-		        	</div>
-
-		        	<div class="staff-profile-social-links">
-		        		
-		        		<ul class="menu left">
-		        			<li> <a href=""> <i class="icon ion-social-facebook"></i> </a> </li>
-		        			<li> <a href=""> <i class="icon ion-social-instagram"></i> </a> </li>
-		        		</ul>
-
-		        	</div>
-
-		        </div>
-
-
-
-
-
-
-
-
-
-		    </div> -->
-		</div>
+		    
+			</div>
 	</section>
 
 
@@ -350,7 +218,7 @@
 				        <a href="/productos"> <button class="btn btn-1 btn-1e animated slideInLeft is-active"> FAÇA PARTE DA CULTURA </button>  </a>
 			    		
 		    			
-				        <a href="tel:+244932337220"> <button class="btn btn-1 btn-1e animated slideInRight"> <i class="icon ion-ios-telephone-outline"></i> ENCOMENDE AO SEU CRITÉRIO </button>  </a>
+				        <a href="tel:{{ $num_contacto->contacto }}"> <button class="btn btn-1 btn-1e animated slideInRight"> <i class="icon ion-ios-telephone-outline"></i> ENCOMENDE AGORA</button>  </a>
 			    	</center>
 		    		
 		    	</div>

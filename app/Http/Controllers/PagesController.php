@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-USE Session;
+use Session;
+use Illuminate\Support\Facades\DB;
 
 use App\informacao_geral_email;
 use App\Producto;
@@ -19,22 +20,11 @@ class PagesController extends Controller
      */
     public function index(){
 
-        $info_geral_email = informacao_geral_email::all();
         $productos = Producto::inRandomOrder()->take(8)->get();
 
         return view('pages.index')
-            ->with('productos', $productos)
-            ->with('informacao_geral_email', $info_geral_email);
+            ->with('productos', $productos);
     }
-
-
-
-    public function productos(){
-
-
-    	return view('pages.productos');
-    }
-
 
 
     public function sobreNos(){
@@ -44,34 +34,27 @@ class PagesController extends Controller
     }
 
 
-     public function galeria(){
-        $productos = Producto::inRandomOrder()->get();
-        return view('pages.galeria')
-            ->with('productos', $productos);
-    }
+
+
+
 
 
      public function info(){
 
-        
 
         return view('pages.info');
     }
 
 
 
+
     public function contacto(){
 
 
-        $info_geral_email = informacao_geral_email::all();
+        Session::flash('warning', 'Página que tentou aceder encontra-se indisponível');
 
-        // Session::flash('success', 'A sua mensagem será respondida o mais rápido possível. Obrigado.');
-
-        return redirect()->route('pages.index')
-            ->with('success', 'asasd');
-        // return view('pages.contacto')
-        //     ->with('informacao_geral_email', $info_geral_email);
-
+        return redirect()->route('pages.index');
+            // ->with('warning', 'Pagina de contacto encontra-se indisponivel');
     }
 
 }

@@ -139,13 +139,13 @@ class ProductoController extends Controller
     	// Incrementar o numero de view
     		$producto->increment('views');
 
-    	$sub_categoria_nome = DB::select('
+   //  	$sub_categoria_nome = DB::select('
 
-				SELECT sub_categorias.*
-				FROM productos
-				INNER JOIN sub_categorias ON (sub_categorias.id = productos.sub_categoria_id)
-				WHERE productos.slug = :slug', ['slug' => $slug]
-			);   	
+			// 	SELECT sub_categorias.*
+			// 	FROM productos
+			// 	INNER JOIN sub_categorias ON (sub_categorias.id = productos.sub_categoria_id)
+			// 	WHERE productos.slug = :slug', ['slug' => $slug]
+			// );   	
 
   		
 
@@ -180,6 +180,28 @@ class ProductoController extends Controller
 
 
 
+
+
+
+
+
+
+
+	   
+
+     public function galeria(){
+        $productos = DB::table('productos')
+            // ->join('categoria_producto', 'producto_id', '=', 'productos.id')
+            // ->join('categorias', 'categorias.id', '=', 'categoria_producto.categoria_id')
+            ->join('sub_categorias', 'sub_categorias.id', '=', 'productos.sub_categoria_id')
+            ->inRandomOrder()
+            ->select('productos.*')
+            ->get();
+
+
+        return view('producto.galeria')
+            ->with('productos', $productos);
+    }
 
 
 

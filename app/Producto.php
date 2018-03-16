@@ -17,9 +17,13 @@ class Producto extends Model
     }
 
 
-
 	public function sub_categorias(){
 		return $this->belongsTo('App\sub_categoria');
+	}
+
+
+	public function estado_producto(){
+		return $this->belongsTo('App\estado_producto');
 	}
 
 

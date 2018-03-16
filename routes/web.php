@@ -20,8 +20,6 @@
 
 	Route::get('/contacto', 'PagesController@contacto')->name('pages.contacto');
 
-	Route::get('/galeria', 'PagesController@galeria')->name('pages.galeria');
-
 	Route::get('/info', 'PagesController@info')->name('pages.info');
 
 
@@ -32,7 +30,8 @@
 	//Producto - Page
 	Route::get('/productos/{slug}', 'ProductoController@findSlug')->name('productos.producto');
 
-
+	// Galeria
+	Route::get('/galeria', 'ProductoController@galeria')->name('pages.galeria');
 
 
 

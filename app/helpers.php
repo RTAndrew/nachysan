@@ -28,6 +28,11 @@ use Carbon\Carbon;
 
 //Erro - IMAGEM nao encontrada
     function imagemProdutoNaoEncontrada($imagem){
+
+        if ($imagem == null or $imagem ==""){
+            return asset('img/image-not-found.png');
+        }
+
     	return file_exists('storage/'.$imagem) ? asset('storage/'.$imagem) : asset('img/image-not-found.png');
     }
 
