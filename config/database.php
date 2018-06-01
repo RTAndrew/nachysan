@@ -30,7 +30,7 @@ return [
     | choice installed on your machine before you begin development.
     |
     */
-mysql://:@/?reconnect=true
+
     'connections' => [
 
         'sqlite' => [
