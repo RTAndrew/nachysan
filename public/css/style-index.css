@@ -398,7 +398,6 @@ section {
 	.nome-produto {
 		color: #373737;
 		font-weight: 400;
-		line-height: 0.9em;
 		text-align: left;
 	}
 
@@ -502,7 +501,6 @@ section {
 				font-family: Open Sans;
 				font-weight: 400;
 				word-break: break-all;
-				color: #dcd0c0;
 				margin-bottom: 0.6em;
 			}
 
@@ -553,14 +551,38 @@ section {
 					border-top: 3px solid #373737;
 				}
 
-
-
-		.inner-mensagem, .inner-contacto{
-			margin-top: 2em;
+		.inner-contacto{
+			margin-bottom: 1em;
 		}
 
+		.inner-mensagem, .inner-contacto{
+			margin-top: 0em;
+		}
+		.inner-contacto i {
+			font-size: 1.5em;
+		}
 
+		.pais-extra-content{
+			margin-bottom: 2em;
+		}
 
+.contacto-section .pais h1{
+	font-size: 1em;
+	color: #b19f65;
+	font-weight: 600;
+}
+	
+	.contacto-section .pais{
+		margin-bottom: 2em;
+	}
+	.pais span{
+		margin-left: 0.3em;
+		font-weight: 400;
+		color: #373737;
+	}
+	.pais i {
+		font-size: 2em;
+	}
 
 
 

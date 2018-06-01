@@ -201,6 +201,59 @@ form .btn{
 
 
 
+	.titulo-seccao-2 {
+		color: #373737;
+		font-weight: 600;
+		font-size: 1.3em;
+		text-align: center;
+		text-transform: uppercase;
+		display: block;
+  		position: relative;
+	}
+		.titulo-seccao-2 h2 {
+			text-align: center;
+		}
+
+	.titulo-seccao-2::after{
+		  content:' ';
+		  position: absolute;
+		  /* bottom:0%; */
+		  left:50%;
+		  width: 30px;
+		  margin-top: 2.1em;
+		  border-top: 2.5px solid #373737;
+		  transform:translateX(-50%);
+	}
+
+
+
+	.titulo-seccao-3 {
+		font-size: 1em;
+		font-weight: 600;
+		color: #373737;
+		text-transform: capitalize;
+		display: block;
+		position: relative;
+		margin-bottom: 2em;
+	}
+		.titulo-seccao-2 h1 {
+			text-align: center;
+		}
+
+	.titulo-seccao-3::after{
+		  content:' ';
+			position: absolute;
+			/* bottom:0%; */
+			left:0.8em;
+			width: 30px;
+			margin-top: 2.1em;
+			margin-left: 1%;
+			border-top: 2.5px solid #373737;
+			transform:translateX(-50%);
+	}
+
+
+
 
 
 
