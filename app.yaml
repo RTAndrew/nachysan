@@ -38,7 +38,7 @@ env_variables:
  MAIL_HOST: smtp.sparkpostmail.com
  MAIL_PORT: 587
  MAIL_USERNAME: sparkpost_username
- MAIL_PASSWORD: ****************
+ MAIL_PASSWORD: ""
 
  LOG_DELETE:  true # this is a parameter added by us in the project .env file. You can add here any setting you would add to your .env file
 
