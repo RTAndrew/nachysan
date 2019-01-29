@@ -1,4 +1,6 @@
 <?php
+
+
 use Carbon\Carbon;
 
 //Adicionar separador virgula aos precos
